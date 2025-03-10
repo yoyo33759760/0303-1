@@ -29,7 +29,7 @@ function setup() {
   dropdown2.position(dropdown.x + dropdown.width + 20, 10); // 將第二個下拉式選單再往右移 10 像素
   dropdown2.option('淡江大學');
   dropdown2.option('找音樂');
-  dropdown2.option('HackMD');
+  dropdown2.option('第四周');
   dropdown2.changed(updateIframe);
   
   iframe = createElement('iframe');
@@ -78,8 +78,8 @@ function updateIframe() {
     iframe.attribute('src', 'https://www.tku.edu.tw/');
   } else if (selected === '找音樂') {
     iframe.attribute('src', 'https://openprocessing.org/');
-  } else if (selected === 'HackMD') {
-    iframe.attribute('src', 'https://hackmd.io/?nav=overview');
+  } else if (selected === '第四周') {
+    iframe.attribute('src', 'https://yoyo33759760.github.io/0310-1/');
   }
 }
 
